@@ -1,0 +1,108 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6f4;
+  color: #26352c;
+}
+
+header {
+  background: #176b45;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: min(90%, 800px);
+  margin: 35px auto;
+}
+
+.login-card {
+  max-width: 430px;
+  margin: auto;
+  padding: 28px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+h2 {
+  color: #176b45;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 7px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5ce;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 20px;
+  background: #176b45;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #105536;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.menu article {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #176b45;
+  box-shadow: 0 3px 12px #0000000a;
+}
+
+.logout {
+  background: #b33a3a;
+  max-width: 180px;
+}
+
+#message {
+  color: #b33a3a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #647067;
+}
+
+[hidden] {
+  display: none !important;
+}

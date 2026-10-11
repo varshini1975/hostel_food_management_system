@@ -1,0 +1,28 @@
+
+const loginForm = document.getElementById("loginForm");
+const loginSection = document.getElementById("loginSection");
+const dashboard = document.getElementById("dashboard");
+const message = document.getElementById("message");
+
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+
+  if (!email || !password) {
+    message.textContent = "Please enter your email and password.";
+    return;
+  }
+
+  // Frontend demo only: this does not verify real user credentials.
+  loginSection.hidden = true;
+  dashboard.hidden = false;
+});
+
+document.getElementById("logoutButton").addEventListener("click", function () {
+  dashboard.hidden = true;
+  loginSection.hidden = false;
+  loginForm.reset();
+  message.textContent = "";
+});

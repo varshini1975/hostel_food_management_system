@@ -1,0 +1,67 @@
+# hostel_food_management_system
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Food Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Hostel Food Management</h1>
+    <p>Fresh Food, Happy Students!</p>
+  </header>
+
+  <main>
+    <section class="login-card" id="loginSection">
+      <h2>Student Login</h2>
+      <p>Welcome! Please login to continue.</p>
+
+      <form id="loginForm">
+        <label for="email">Email Address</label>
+        <input id="email" type="email"
+               placeholder="student@example.com" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password"
+               placeholder="Enter password" required>
+
+        <button type="submit">Login</button>
+        <p id="message" role="status"></p>
+      </form>
+      <small>Demo: enter any valid email and a password.</small>
+    </section>
+
+    <section id="dashboard" hidden>
+      <h2>Welcome, Student! 👋</h2>
+      <p>Today's Hostel Food Menu</p>
+
+      <div class="menu">
+        <article>
+          <h3>🌅 Breakfast</h3>
+          <p>Idli, Sambar, Chutney</p>
+        </article>
+        <article>
+          <h3>☀️ Lunch</h3>
+          <p>Rice, Sambar, Poriyal</p>
+        </article>
+        <article>
+          <h3>🌙 Dinner</h3>
+          <p>Chapati, Kurma</p>
+        </article>
+      </div>
+
+      <button id="logoutButton" class="logout">Logout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hostel Food Management System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
